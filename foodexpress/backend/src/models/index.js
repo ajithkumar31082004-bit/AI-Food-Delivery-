@@ -10,6 +10,7 @@ const sequelize = process.env.DATABASE_URL
           require: true,
           rejectUnauthorized: false,
         },
+        family: 4, // Force IPv4 — Railway doesn't support IPv6 to Supabase
       },
     })
   : new Sequelize(
