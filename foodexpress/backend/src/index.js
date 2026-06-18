@@ -1,3 +1,4 @@
+require('dns').setDefaultResultOrder('ipv4first'); // Force IPv4 — Railway IPv6 is unreachable
 require('dotenv').config();
 const http = require('http');
 const express = require('express');
