@@ -1,5 +1,5 @@
 require('dotenv').config();
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { sequelize, User, Category, Restaurant, FoodItem, Coupon, Review } = require('./models');
 
 const FOOD_IMAGES = {

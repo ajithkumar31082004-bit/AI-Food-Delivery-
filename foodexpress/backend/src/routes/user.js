@@ -1,5 +1,5 @@
 const express = require('express');
-const bcrypt = require('bcrypt');
+const bcrypt = require('bcryptjs');
 const { Address, Favorite, Order, OrderItem, FoodItem, Restaurant, User, Coupon } = require('../models');
 const { auth } = require('../middleware/auth');
 const { generateCoupon } = require('../services/gemini');
